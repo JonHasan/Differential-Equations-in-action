@@ -1,0 +1,80 @@
+Motion of the earth
+
+In order to create a computational solution, first we must understand the scenario from a mathematical 
+perspective.
+
+For the situation of modelling Apollo 13's return flight, we can make some assumptions about important
+variables to consider. 
+
+In the Quiz titled "What's Important", the instructor lists the following 
+
+Mass of craft: Not important
+Size of moon: Somewhat important
+Motion of the moon: Vital
+Size of the earth: Vital
+Modtion of the earth: Somewhat
+3D : Somewhat (Reason being the flight path looks planar in a 3d perspective) 
+
+
+One also needs to have a solid handle of trigonometry.
+
+Remember that to convert from degrees to radians multiply by Pi/180
+degrees * Pi/180 = Radians
+For vice versa, simply invert the conversion. So 
+radians *  180/Pi =  degrees. 
+
+Also remember that Sin(angle) = opposite side/hypotenuse
+                   Cos(angle) = adjacent side/hypotensue
+                   Tan(angle) opposite side / adjacent side
+                   
+Now we get started setting up the scenario. 
+
+We need a way to represent x and y coordinates. This is shown in the Quiz titled: "Motion of the Moon"
+
+we need to represent this in the form as follows
+
+x = A * cos(B * x)
+y = A * Sin(B * x) 
+
+(Hint for those doing this problem, cosine and sine operations can only operate on unitless numbers)
+Additionally, you are talking about coordinates, what units are typically used for this? 
+
+The next topic is the derivative. This is a basic calculus concept that has a very important role in the
+study of calculus. A derivative is a rate of change. Always remember this.
+
+Now this brings us the mathematical representation of derivatives. When you look at a graph and you 
+have an increasingly small change in x where it is virtually zero but not quite, you can find the 
+"instantaneous rate of change".
+
+So you start at a time t and you take a time step so that the end point is t + h. Than the difference
+taken between those two points would look like this:
+f(t+h) - f(t) 
+
+Then you divide by a change in h so the derivative formula should look like this:
+
+(f(t+h) - f(t))/h
+
+But now you have to bring h to 0. So what do you do?
+
+Simple, multiply out the terms for f(t+h) and you should find out the one of the terms cancels out with
+f(t)!
+
+NOTE: IF you dont have a scenario where the f(t) is elimanated there is an issue with your calculation. 
+
+Now all the terms that are left over should have an h term within them. Which means you cancel the h's.
+
+The rest should take care of itself. 
+
+
+Newtons Second Lae
+
+Now we can get to the meat and potatoes. 
+
+This law is represented by the formula
+
+F = m*a. 
+
+where m is in kg and a is in m/s/s. A is also the derivative of velocity and the second derivative of position
+
+An example of derivatives is shown in the "Derivative Overview" video. Given a velocity map, you should find the rate 
+of change of the velocity map. What do you call a change in velocity?
