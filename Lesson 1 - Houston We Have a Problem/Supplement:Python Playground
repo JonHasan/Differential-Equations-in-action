@@ -1,0 +1,69 @@
+#Assign a value to a variable
+
+answer = 42
+radius_of_earth = 6.371e6
+#test number = 43         // Not good practice to put spaces in variable names 
+#13test = 12              // Not good practice to put numbers at the beginning of a variable name
+
+
+--------------------------------------------------------------------
+answer = 42
+radiu_of_earth = 6.371e6
+a = 3 * answer + 4
+
+b = radius_of_earth ** 2 + (a+3) ** .5
+
+answer += 7
+
+c = 5/4                 // Integer division doesnt bother with remainders, only get 1
+d = 5/4.                // Outputs number with remainder
+e = 1.0*5/4             // By introducing a float, the number outputted becomes a float
+
+print a,b,answer,c,d,e
+
+--------------------------------------------------------------------
+import math // import the math library. Allows the use of math function that contributes to readability
+
+f = math.sqrt(4)
+g = radius_of_earth * math.sin(math.pi/180.0*23.4)
+g = radius_of_earth * math.sin(math.pi /
+    180.0 * 23.4)
+    
+print f,g
+
+------------------------------------------------------------------------
+
+for h in range(7): // for loop, for all numbers from 0 to 7, output their sqaures. 
+  i = h**2
+  print i 
+  
+  ----------------------------------------------------------------------
+  
+ k = 42
+ m = 43
+
+ while k < 130 or m == 140:  // While loops, used for when something needs to be done and terminates when finished. . 
+      k += 1
+      m+= k 
+print k,m 
+
+--------------------------------------------------------------------------
+k = 130
+m = 7655
+
+if k > 42:     // Conditionals execute when conditiona are met. One time deal in this example 
+    print 'Hi"
+elif m> 43:
+    print "Hello"
+else:
+    print "Bye"
+   
+   
+---------------------------------------------------------------------------
+import numpy
+
+n = numpy.zeros(5)  // Create a numpy array that can be easily modified. 
+n[0] = 29.
+n[4] = 99.
+print n
+print n[-1] 
